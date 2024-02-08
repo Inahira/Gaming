@@ -1,0 +1,166 @@
+/* Media Queries */
+
+/* Tablets and Small Screens */
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 35px;
+  }
+
+  .header {
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    padding: 20px;
+    
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  .join-btn {
+    display: none;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .home h1 {
+    font-size: 42px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .home button {
+    font-size: 14px;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .games,
+  .events,
+  .community,
+  .about {
+    height: 90%;
+    width: 85%;
+    padding-top: 20px;
+    margin: 20% auto;
+  }
+
+  h2 {
+    width: 40%;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .div1 {
+    flex: 0 0 100%;
+  }
+
+  .community .div1 {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cta-button {
+    width: 60%;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .community {
+    flex-direction: column;
+    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  li {
+    margin-right: 30px;
+  }
+
+  .join-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .home h1 {
+    font-size: 82px;
+  }
+
+  .home p {
+    font-size: 20px;
+  }
+
+  .home button {
+    font-size: 18px;
+  }
+
+  .games,
+  .events,
+  .community,
+  .about {
+    width: 70%;
+    padding-top: 64px;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .events h2 {
+    width: 40%;
+  }
+
+  .div1 {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .community .div1 {
+    padding: 40px;
+  }
+
+  .cta-button {
+    padding: 16px 32px;
+    font-size: 20px;
+  }
+}
